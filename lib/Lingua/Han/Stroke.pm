@@ -3,7 +3,7 @@ package Lingua::Han::Stroke;
 use warnings;
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use File::Spec;
 use Lingua::Han::Utils qw/Unihan_value/;
@@ -33,7 +33,7 @@ sub stroke {
 
 =head1 NAME
 
-Lingua::Han::StrokeCount - Retrieve the stroke count of Chinese character.
+Lingua::Han::Stroke - Retrieve the stroke count of Chinese character.
 
 =head1 SYNOPSIS
 
