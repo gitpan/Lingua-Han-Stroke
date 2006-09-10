@@ -3,7 +3,7 @@ package Lingua::Han::Stroke;
 use warnings;
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.03';
+$VERSION = '0.05';
 
 use File::Spec;
 use Lingua::Han::Utils qw/Unihan_value/;
@@ -30,6 +30,9 @@ sub stroke {
 	my $code = Unihan_value($hanzi); # got the Unihan field 1
 	return $self->{'st'}->{$code};
 }
+1;
+__END__
+=encoding utf8
 
 =head1 NAME
 
@@ -40,7 +43,7 @@ Lingua::Han::Stroke - Retrieve the stroke count of Chinese character.
     use Lingua::Han::Stroke;
     my $stroke = Lingua::Han::Stroke->new();
     
-    print $stroke->("Œ“"); # 7
+    print $stroke->stroke("Œ“"); # 7
 
 =head1 DESCRIPTION
 
@@ -94,7 +97,3 @@ Copyright 2005 Fayland Lam, all rights reserved.
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.
-
-=cut
-
-1; # End of Lingua::Han::Stroke
