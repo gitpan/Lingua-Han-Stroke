@@ -1,24 +1,23 @@
 ---
-abstract: 'Retrieve the stroke count of Chinese character.'
+abstract: unknown
 author:
-  - 'Fayland Lam <fayland@gmail.com>'
+  - unknown
 build_requires:
-  Lingua::Han::Utils: 0
-  Test::More: 0
+  ExtUtils::MakeMaker: 0
 configure_requires:
-  Module::Build: 0.4
+  ExtUtils::MakeMaker: 0
 dynamic_config: 1
-generated_by: 'Module::Build version 0.4, CPAN::Meta::Converter version 2.112150'
-license: perl
+generated_by: 'ExtUtils::MakeMaker version 6.66, CPAN::Meta::Converter version 2.120921'
+license: unknown
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
 name: Lingua-Han-Stroke
-provides:
-  Lingua::Han::Stroke:
-    file: lib/Lingua/Han/Stroke.pm
-    version: 0.09
-resources:
-  license: http://dev.perl.org/licenses/
-  repository: http://github.com/fayland/perl-lingua-han/tree/master
-version: 0.09
+no_index:
+  directory:
+    - t
+    - inc
+requires:
+  Lingua::Han::Utils: 0
+  Test::More: 0
+version: 0.10
